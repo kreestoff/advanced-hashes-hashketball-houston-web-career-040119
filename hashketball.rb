@@ -162,6 +162,7 @@ def player_numbers(team)
         end
       end
     end
+    array
   end
 end
 
