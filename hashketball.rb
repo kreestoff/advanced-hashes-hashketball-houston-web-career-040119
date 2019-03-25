@@ -199,6 +199,19 @@ def big_shoe_rebounds
               if biggest_shoe == nil
                 biggest_shoe = stat_value
                 biggest_shoe_player_rebounds = game_hash[location][:players][name][:rebounds]
+              elsif stat_value > biggest_shoe
+                biggest_shoe = stat_value
+                biggest_shoe_player_rebounds = game_hash[location][:players][name][:rebounds]
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  biggest_shoe_player_rebounds
+end
+
 
 
     
