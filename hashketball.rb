@@ -187,7 +187,18 @@ def player_stats(name)
   end
   player_stats
 end
-
+def big_shoe_rebounds
+  biggest_shoe = nil 
+  biggest_shoe_player_rebounds = nil 
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |name, stats|
+          stats.each do |stat_label, stat_value|
+            if stat_label == :shoe
+              if biggest_shoe == nil
+                biggest_shoe = stat_value
+                biggest_shoe_player_rebounds
 
 
     
