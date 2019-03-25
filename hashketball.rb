@@ -166,11 +166,11 @@ def player_numbers(team)
     stats.each do |stat_label, stat_value|
       if stat_label == :number
         array << stat_value
+       end
       end
     end
   end
   array
-end
 end
 
     
