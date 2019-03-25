@@ -159,6 +159,7 @@ def player_numbers(team)
       team_data[:players].each do |name, stats|
         array << stats[:number]
       end
+    end
     array
   end
 end
